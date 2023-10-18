@@ -11,7 +11,8 @@ const AddProduct = () => {
         const price = form.price.value;
         const image = form.image.value;
         const description = form.description.value;
-        const newProduct = {name, brand, type, price, image, description};
+        const rating = form.rating.value;
+        const newProduct = {name, brand, type, price, image, description, rating};
 
         console.log(newProduct);
 
@@ -99,6 +100,37 @@ const AddProduct = () => {
                 type="text" name="description" placeholder="Enter description" className="input input-bordered w-full"/>
             </label>
           </div>
+        </div>
+        {/* Rating */}
+        <div className="flex h-auto items-center form-control">
+            <h2>Rating</h2>
+        <div className="rating rating-sm pl-2">
+              <input
+                type="radio"
+                name="rating"
+                className="mask mask-star-2 bg-red-400"
+              />
+              <input
+                type="radio"
+                name="rating"
+                className="mask mask-star-2 bg-red-400"
+              />
+              <input
+                type="radio"
+                name="rating"
+                className="mask mask-star-2 bg-red-400"
+              />
+              <input
+                type="radio"
+                name="rating"
+                className="mask mask-star-2 bg-red-400"
+              />
+              <input
+                type="radio"
+                name="rating"
+                className="mask mask-star-2 bg-red-400"
+              />
+            </div>
         </div>
         <input type="submit" value="Add Product" className="btn btn-block" />
       </form>

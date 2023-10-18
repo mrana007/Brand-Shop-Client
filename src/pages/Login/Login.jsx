@@ -43,7 +43,7 @@ const Login = () => {
 
     return (
         <div>
-            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl mx-auto mb-8" data-aos="fade-up">
+            <div className="card flex-shrink-0 w-full bg-blue-200 max-w-sm shadow-2xl mx-auto mb-8" data-aos="fade-up">
             <h2 className="text-3xl my-6 text-center font-bold">Login your account</h2>
             <form onSubmit={handleLogin} className="w-3/4 mx-auto">
         <div className="form-control">
@@ -67,11 +67,11 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-fuchsia-700 normal-case text-white font-semibold text-2xl">Login</button>
+          <button className="btn bg-blue-600 normal-case text-white font-semibold text-2xl">Login</button>
         </div>
             </form>
         <div className="form-control pt-4 px-12">
-          <button onClick={handleGoogleSignIn} className="btn btn-outline text-fuchsia-600 normal-case font-semibold text-2xl"><FcGoogle/> Login with Google</button>
+          <button onClick={handleGoogleSignIn} className="btn btn-outline text-blue-700 normal-case font-semibold text-2xl"><FcGoogle/>Google</button>
         </div>
             <p className="text-center mt-4 pb-4">Do not Have An Account ? <Link to='/register' className="font-extrabold text-blue-600">Register</Link></p>
             </div>

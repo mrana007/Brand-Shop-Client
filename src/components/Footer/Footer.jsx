@@ -8,13 +8,13 @@ const Footer = () => {
     <a className="link link-hover">About us</a> 
     <a className="link link-hover">Contact</a> 
     <a className="link link-hover">Career</a> 
-    <a className="link link-hover">Event</a>
+    <a className="link link-hover">Brand</a>
   </nav> 
   <nav>
     <div className="grid grid-flow-col gap-4">
     <Link><FaFacebookF className='text-blue-500 text-4xl'></FaFacebookF></Link>
-    <Link><FaTwitter className='text-blue-500 text-4xl'></FaTwitter></Link>
     <Link><FaInstagram className='text-red-500 text-4xl'></FaInstagram></Link>
+    <Link><FaTwitter className='text-blue-500 text-4xl'></FaTwitter></Link>
     <Link><FaYoutube className='text-red-500 text-4xl'></FaYoutube></Link>
     </div>
   </nav> 
