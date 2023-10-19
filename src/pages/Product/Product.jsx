@@ -23,7 +23,7 @@ const Product = ({ product }) => {
           <Link to={`/product/${_id}`}>
             <button className="btn bg-blue-400 text-white">Details</button>
           </Link>
-          <Link>
+          <Link to={`/update/${_id}`}>
             <button className="btn bg-blue-400 text-white">Update</button>
           </Link>
         </div>
