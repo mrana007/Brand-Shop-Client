@@ -10,8 +10,8 @@ const AddProduct = () => {
         const type = form.type.value;
         const price = form.price.value;
         const image = form.image.value;
-        const description = form.description.value;
         const rating = form.rating.value;
+        const description = form.description.value;
         
         const newProduct = {name, brand, type, price, image, description, rating};
 
@@ -81,7 +81,7 @@ const AddProduct = () => {
             </label>
           </div>
         </div>
-        {/* form image and description row */}
+        {/* form image and rating row */}
         <div className="md:flex">
           <div className="form-control md:w-1/2 md:mr-4">
             <label className="label">
@@ -94,6 +94,17 @@ const AddProduct = () => {
           </div>
           <div className="form-control md:w-1/2">
             <label className="label">
+              <span className="label-text">Rating</span>
+            </label>
+            <label className="input-group">
+              <input
+                type="text" name="rating" placeholder="Enter rating" className="input input-bordered w-full"/>
+            </label>
+          </div>
+        </div>
+        {/* description row */}
+        <div className="form-control w-full">
+            <label className="label">
               <span className="label-text">Description</span>
             </label>
             <label className="input-group">
@@ -101,38 +112,6 @@ const AddProduct = () => {
                 type="text" name="description" placeholder="Enter description" className="input input-bordered w-full"/>
             </label>
           </div>
-        </div>
-        {/* Rating */}
-        <div className="flex h-auto items-center form-control">
-            <h2>Rating</h2>
-        <div className="rating rating-sm pl-2">
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask-star-2 bg-red-400"
-              />
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask-star-2 bg-red-400"
-              />
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask-star-2 bg-red-400"
-              />
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask-star-2 bg-red-400"
-              />
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask-star-2 bg-red-400"
-              />
-            </div>
-        </div>
         <input type="submit" value="Add Product" className="btn btn-block" />
       </form>
     </div>
