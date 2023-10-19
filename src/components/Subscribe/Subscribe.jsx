@@ -4,7 +4,7 @@ const Subscribe = () => {
       <h2 className="text-3xl font-extrabold text-center pb-12">
         Get in Touch
       </h2>
-      <div className="md:flex md:gap-26 justify-between items-center bg-blue-200 p-8">
+      <div className="md:flex md:gap-26 justify-between items-center bg-blue-200 p-8 md:py-20">
         <div className="md:w-1/2 pb-4">
           <h2 className="text-4xl font-bold pb-4">
             Contact Us for those interested

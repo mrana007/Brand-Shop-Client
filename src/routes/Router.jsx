@@ -46,7 +46,7 @@ const router = createBrowserRouter([
     },
     {
         path:'/update/:_id',
-        element: <UpdateProduct />,
+        element: <PrivetRoutes><UpdateProduct /></PrivetRoutes>,
         loader: ({params}) => fetch(`http://localhost:5000/product/${params._id}`)
     },
     {

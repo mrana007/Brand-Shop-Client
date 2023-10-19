@@ -13,12 +13,12 @@ const PopularProducts = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 p-4 md:p-0 gap-5 md:gap-12">
         {/* first card */}
-        <div className="card card-compact bg-base-100 border border-slate-600 rounded-none">
+        <div className="card card-compact bg-base-100 border border-slate-300 rounded-none">
           <figure>
             <img
               src="https://i.ibb.co/g4v8XyF/apple-magic-mouse.jpg"
               alt="apple"
-              className="h-80 w-full"
+              className="h-80 w-full p-2"
             />
           </figure>
           <div className="flex justify-between p-7">
@@ -61,12 +61,12 @@ const PopularProducts = () => {
           </div>
         </div>
         {/* second card */}
-        <div className="card card-compact bg-base-100 border border-slate-600 rounded-none">
+        <div className="card card-compact bg-base-100 border border-slate-300 rounded-none">
           <figure>
             <img
               src="https://i.ibb.co/G5M28bV/airpod.jpg"
               alt="apple"
-              className="h-80 w-full"
+              className="h-80 w-full p-2"
             />
           </figure>
           <div className="flex justify-between p-7">
@@ -109,12 +109,12 @@ const PopularProducts = () => {
           </div>
         </div>
         {/* third card */}
-        <div className="card card-compact bg-base-100 border border-slate-600 rounded-none">
+        <div className="card card-compact bg-base-100 border border-slate-300 rounded-none">
           <figure>
             <img
               src="https://i.ibb.co/DC1q5yS/galaxy-s23.jpg"
               alt="samsung"
-              className="h-80 w-full"
+              className="h-80 w-full p-2"
             />
           </figure>
           <div className="flex justify-between p-7">
@@ -158,12 +158,12 @@ const PopularProducts = () => {
           </div>
         </div>
         {/* fourth card */}
-        <div className="card card-compact bg-base-100 border border-slate-600 rounded-none">
+        <div className="card card-compact bg-base-100 border border-slate-300 rounded-none">
           <figure>
             <img
               src="https://i.ibb.co/m8pWsnQ/sony-camera.jpg"
               alt="Sony"
-              className="h-80 w-full"
+              className="h-80 w-full p-2"
             />
           </figure>
           <div className="flex justify-between p-7">
@@ -207,12 +207,12 @@ const PopularProducts = () => {
         </div>
 
         {/* fifth card */}
-        <div className="card card-compact bg-base-100 border border-slate-600 rounded-none">
+        <div className="card card-compact bg-base-100 border border-slate-300 rounded-none">
           <figure>
             <img
               src="https://i.ibb.co/d7rw11G/xiaomi-speaker.jpg"
               alt="xiaomi"
-              className="h-80 w-full"
+              className="h-80 w-full p-2"
             />
           </figure>
           <div className="flex justify-between p-7">
@@ -255,12 +255,12 @@ const PopularProducts = () => {
           </div>
         </div>
         {/* sixth card */}
-        <div className="card card-compact bg-base-100 border border-slate-600 rounded-none">
+        <div className="card card-compact bg-base-100 border border-slate-300 rounded-none">
           <figure>
             <img
               src="https://i.ibb.co/McjWnyP/google-pixel-8-blue-white.webp"
               alt="pixel"
-              className="h-80 w-full"
+              className="h-80 w-full p-2"
             />
           </figure>
           <div className="flex justify-between p-7">
