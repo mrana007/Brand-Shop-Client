@@ -5,11 +5,15 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import AddProduct from "../pages/AddProduct/AddProduct";
 import Products from "../pages/Products/Products";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import PrivetRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -30,9 +34,14 @@ const router = createBrowserRouter([
       },
       {
         path: '/products/:brandName',
-        element: <Products />,
+        element: <PrivetRoutes><Products /></PrivetRoutes>,
         loader: ({params})=> fetch(`http://localhost:5000/products/${params.brandName}`)
     },
+    {
+        path:'/product/:_id',
+        element: <PrivetRoutes><ProductDetails /></PrivetRoutes>,
+        loader: ({params}) => fetch(`http://localhost:5000/product/${params._id}`)
+    }
     ],
   },
 ]);
