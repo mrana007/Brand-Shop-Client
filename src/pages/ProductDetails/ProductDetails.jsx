@@ -43,7 +43,7 @@ const ProductDetails = () => {
             <p className="text-center md:w-2/3 mx-auto">{description}</p>
           </div>
           <div className="md:w-2/3 mx-auto text-center border mb-8">
-            <div className="md:w-2/3 pt-2 pl-2 ">
+            <div className="md:w-2/3 pt-2 pl-12 ">
               <p>
                 Type: <span className="text-lg font-semibold">{type}</span>
               </p>

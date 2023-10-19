@@ -10,7 +10,7 @@ const Subscribe = () => {
             Contact Us for those interested
           </h2>
           <p className="">
-            Thank you for your interest in GadgetGrove! We are thrilled to learn
+            Thank you for your interest in Gadget<span className="text-blue-700 text-2xl">Grove</span>! We are thrilled to learn
             that <br /> you would like to get in touch with us Whether you have
             questions, <br /> feedback, partnership proposals, or any other
             inquiries, we are here to assist you.
