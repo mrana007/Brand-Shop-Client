@@ -1,14 +1,20 @@
+import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import swal from "sweetalert";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const ProductDetails = () => {
 
+  const {user} = useContext(AuthContext)
+    const userEmail = user.email;
+
     const { _id, name, brand, type, price, description, image } = useLoaderData();
 
-    const cartItem = {name, brand, type, price, image, description};
+    const cartItem = {name, brand, type, price, image, description, userEmail};
+
 
     const handleAddToCart = () =>{
-        fetch('http://localhost:5000/carts', {
+        fetch('https://a10-gadgetgrove.vercel.app/carts', {
             method: "POST",
             headers:{
                 "content-type": "application/json",

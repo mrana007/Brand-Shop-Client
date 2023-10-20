@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch('http://localhost:5000/brands')
+        loader: () => fetch('https://a10-gadgetgrove.vercel.app/brands')
       },
       {
         path: "/login",
@@ -37,22 +37,21 @@ const router = createBrowserRouter([
       {
         path: '/products/:brandName',
         element: <PrivetRoutes><Products /></PrivetRoutes>,
-        loader: ({params})=> fetch(`http://localhost:5000/products/${params.brandName}`)
+        loader: ({params})=> fetch(`https://a10-gadgetgrove.vercel.app/products/${params.brandName}`)
     },
     {
         path:'/product/:_id',
         element: <PrivetRoutes><ProductDetails /></PrivetRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params._id}`)
+        loader: ({params}) => fetch(`https://a10-gadgetgrove.vercel.app/product/${params._id}`)
     },
     {
         path:'/update/:_id',
         element: <PrivetRoutes><UpdateProduct /></PrivetRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params._id}`)
+        loader: ({params}) => fetch(`https://a10-gadgetgrove.vercel.app/product/${params._id}`)
     },
     {
         path:'/cart',
-        element: <PrivetRoutes><MyCart /></PrivetRoutes>,
-        loader: () => fetch('http://localhost:5000/carts')
+        element: <PrivetRoutes><MyCart /></PrivetRoutes>
     }
     ],
   },

@@ -17,7 +17,7 @@ const ItemCart = ({ cart, carts, setCarts }) => {
           .then((willDelete) => {
             if (willDelete) {
 
-                fetch(`http://localhost:5000/carts/${_id}`, {
+                fetch(`https://a10-gadgetgrove.vercel.app/carts/${_id}`, {
                     method: "DELETE"
                 })
                 .then(res => res.json())
