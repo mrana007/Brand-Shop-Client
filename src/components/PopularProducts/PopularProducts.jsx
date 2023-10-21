@@ -8,9 +8,11 @@ import {
 const PopularProducts = () => {
   return (
     <div className="max-w-7xl mx-auto my-20">
-      <h2 className="text-3xl font-extrabold text-center pb-12">
+      <div className="max-w-4xl mx-auto pb-12">
+        <h2 className="text-3xl font-extrabold text-center">
         Popular Products
       </h2>
+      <p className="p-4 lg:p-0"> Introducing the most sought-after items that our customers can not get enough of! At Gadget<span className="text-blue-500 text-xl font-bold">Grove</span>, we have curated a collection of popular products that are making waves in the market. From cutting-edge tech gadgets to fashion-forward must-haves, these products are the epitome of style and functionality. Ready to add some of these gems to your cart!</p></div>
       <div className="grid grid-cols-1 md:grid-cols-3 p-4 md:p-0 gap-5 md:gap-12">
         {/* first card */}
         <div className="card card-compact bg-base-100 border border-slate-300 rounded-none">

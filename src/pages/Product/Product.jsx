@@ -21,11 +21,11 @@ const Product = ({ product }) => {
         Price:<span className="text-xl font-semibold">${price}</span>
         </p>
         <div className="card-actions justify-between">
-          <Link to={`/product/${_id}`}>
-            <button className="btn bg-blue-400 text-white">Details</button>
-          </Link>
           <Link to={`/update/${_id}`}>
             <button className="btn bg-green-600 text-white">Update</button>
+          </Link>
+          <Link to={`/product/${_id}`}>
+            <button className="btn bg-blue-400 text-white">Details</button>
           </Link>
         </div>
       </div>
