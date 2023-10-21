@@ -1,4 +1,4 @@
-# Live Site:
+# Live Site: https://a10-brand-shop-client.web.app/
 # Features of GadgetGrove
 
 - In this project having a navbar including Home routes and two private route and a dynamic login and logout button

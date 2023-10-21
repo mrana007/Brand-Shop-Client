@@ -47,7 +47,7 @@ const AddProduct = () => {
             </label>
             <label className="input-group">
               <input
-                type="text" name="name" placeholder="Enter name" className="input input-bordered w-full"/>
+                type="text" name="name" required placeholder="Enter name" className="input input-bordered w-full"/>
             </label>
           </div>
           <div className="form-control md:w-1/2">
@@ -56,7 +56,7 @@ const AddProduct = () => {
             </label>
             <label className="input-group">
               <input
-                type="text" name="brand" placeholder="Enter brand name" className="input input-bordered w-full"/>
+                type="text" name="brand" required placeholder="Enter brand name" className="input input-bordered w-full"/>
             </label>
           </div>
         </div>
@@ -68,7 +68,7 @@ const AddProduct = () => {
             </label>
             <label className="input-group">
               <input
-                type="text" name="type" placeholder="Enter type" className="input input-bordered w-full"/>
+                type="text" name="type" required placeholder="Enter type" className="input input-bordered w-full"/>
             </label>
           </div>
           <div className="form-control md:w-1/2">
@@ -77,7 +77,7 @@ const AddProduct = () => {
             </label>
             <label className="input-group">
               <input
-                type="text" name="price" placeholder="Enter price" className="input input-bordered w-full"/>
+                type="text" name="price" required placeholder="Enter price" className="input input-bordered w-full"/>
             </label>
           </div>
         </div>
@@ -89,7 +89,7 @@ const AddProduct = () => {
             </label>
             <label className="input-group">
               <input
-                type="text" name="image" placeholder="Enter image URL" className="input input-bordered w-full"/>
+                type="text" name="image" required placeholder="Enter image URL" className="input input-bordered w-full"/>
             </label>
           </div>
           <div className="form-control md:w-1/2">
@@ -98,7 +98,7 @@ const AddProduct = () => {
             </label>
             <label className="input-group">
               <input
-                type="text" name="rating" placeholder="Enter rating" className="input input-bordered w-full"/>
+                type="text" name="rating" required placeholder="Enter rating" className="input input-bordered w-full"/>
             </label>
           </div>
         </div>
@@ -109,7 +109,7 @@ const AddProduct = () => {
             </label>
             <label className="input-group">
               <input
-                type="text" name="description" placeholder="Enter description" className="input input-bordered w-full"/>
+                type="text" name="description" required placeholder="Enter description" className="input input-bordered w-full"/>
             </label>
           </div>
         <input type="submit" value="Add Product" className="btn btn-block" />
