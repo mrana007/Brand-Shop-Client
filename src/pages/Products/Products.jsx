@@ -12,11 +12,13 @@ const Products = () => {
             <div className="max-w-5xl mx-auto">
                 <Advertisement></Advertisement>
             </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-9 p-4 md:px-24">
+                <div className="max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
                 {
                     products.map((product)=> <Product key={product._id} product={product}></Product>)
                 }
             </div>
+                </div>
         </div>
     );
 };
